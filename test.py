@@ -19,7 +19,7 @@ def parse_args():
     return args
 
 
-def test(args):
+def density(inputs):
     args = parse_args()
     os.environ['CUDA_VISIBLE_DEVICES'] = args.device.strip()  # set vis gpu
 
@@ -38,7 +38,7 @@ def test(args):
         with torch.set_grad_enabled(False):
             outputs = model(inputs)
             temp_minu = count[0].item() - torch.sum(outputs).item()
-            out_str = 'name:{}, 真实人数：{}, 估计人数：{}, 误差：{}'.format(name,count[0].item(),torch.sum(outputs).item(),temp_minu)
+            out_str = 'name:{}, 密度估计：{}, 真实人数：{}, 估计人数：{}, 误差：{}'.format(name, outputs, count[0].item(),torch.sum(outputs).item(),temp_minu)
             print(out_str)
             epoch_minus.append(temp_minu)
 
@@ -48,11 +48,11 @@ def test(args):
     log_str = 'Final Test: mae {}, mse {}'.format(mae, mse)
     print(log_str)
 
-    return name,count[0].item(),torch.sum(outputs).item(),temp_minu
+    return name, outputs, count[0].item(),torch.sum(outputs).item(),temp_minu
 
 if __name__ == '__main__':
     args = parse_args()
-    test(args)
+    density(args)
 
 
 
