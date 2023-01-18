@@ -2,32 +2,6 @@
 [Arxiv](https://arxiv.org/abs/1908.03684) | [CVF](http://openaccess.thecvf.com/content_ICCV_2019/papers/Ma_Bayesian_Loss_for_Crowd_Count_Estimation_With_Point_Supervision_ICCV_2019_paper.pdf) 
 ###  Official Implement of ICCV 2019 oral paper "Bayesian Loss for Crowd Count Estimation with Point Supervision"
 
-## Visualization
-### Bayesian
-
-![](imgs/bayesian.png)
-
-### Bayesian+
-
-![](imgs/bayesian+.png)
-
-### Density
-
-![](imgs/density.png)
-
-## Citation
-If you use this code for your research, please cite our paper:
-
-```
-@inproceedings{ma2019bayesian,
-  title={Bayesian loss for crowd count estimation with point supervision},
-  author={Ma, Zhiheng and Wei, Xing and Hong, Xiaopeng and Gong, Yihong},
-  booktitle={Proceedings of the IEEE International Conference on Computer Vision},
-  pages={6142--6151},
-  year={2019}
-}
-```
-
 ## Code
 
 ### Install dependencies
@@ -67,21 +41,9 @@ For shanghaitech a, you should set learning rate to 1e-6, and bg_ratio to 0.1
 ### Pretrain Weight
 #### UCF-QNRF
 
-Baidu Yun [Link](https://pan.baidu.com/s/1Evxxu1skHni3Iv3VxdcZvA) extract code: x9wc
+Baidu Yun [Link](https://pan.baidu.com/s/1aVowJFtkZ9-3zwvd7SPz0w) extract code: rr63
 
-Google Drive [Link](https://drive.google.com/file/d/1i22E7_zigkSm7nBnqMaEv00MD3CPhIDk/view?usp=sharing)
 
-#### ShanghaiTech A
-
-Baidu Yun [Link](https://pan.baidu.com/s/1GlaxGzFI8qFCHbqu56qSRw) extract code: tx0m
-
-Goodle Drive [Link](https://drive.google.com/file/d/13bEdshBY-brUvLSwTCOqDlK5QKcZIAAH/view?usp=sharing)
-
-#### ShanghaiTech B
-
-Baidu Yun [Link](https://pan.baidu.com/s/1YYg-a-sdhBAHZRJzZOU-6Q) extract code: a15u
-
-Goodle Drive [Link](https://drive.google.com/file/d/1woK-bI_JyeY9wZL2pXsWgPzQqhD8Qy0u/view?usp=sharing)
 
 ### License
 
